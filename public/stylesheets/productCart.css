@@ -1,0 +1,25 @@
+@import"style.css";
+
+.bodi{   
+    background-color:#f1f1f1a6;
+}
+
+h5{
+    color:#f1f1f1a6;
+}
+
+.carrito{   
+    background-color: #181818;
+    padding-left: 47px;
+    padding-top: 33px;
+    padding-right: 41px;
+}
+
+.card-body{ 
+    background-color: #181818;
+}
+
+.mr-2{
+    height: 84px;
+    max-width: 100%;
+}

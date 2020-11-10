@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<%- include('partials/head') %>
+
+    <body>
+        <%- include('partials/header') %>
+
+        <%- include('partials/nav') %>
+            <div class="container">
+                <section class="perfilUsuario">
+                    <div class="row perfil">
+
+                        <div class="titulo col-12">
+                            <h2>
+                                <%= title %>
+                            </h2>
+                        </div>
+
+
+                        <div class="col-12">
+                            <div class="contenido">
+                                <ul class="nav nav-tabs " id="myTab" role="tablist">
+                                    <li class="nav-item " role="presentation">
+                                        <a class="nav-link " id="home-tab" data-toggle="tab" href="#datos" role="tab" aria-controls="home" aria-selected="true">Mis Datos</a>
+                                    </li>
+                                </ul>
+                                        <form>
+                                            <div class="row">
+                                                <div class="col">
+                                                  <input type="text" class="form-control" value="<%= usuario.nombre %> ">
+                                                </div>
+                                                <div class="col">
+                                                  <input type="text" class="form-control" value="<%= usuario.apellido %> ">
+                                                </div>
+                                              </div>                                            
+                                            <div class="form-row">
+                                              <div class="form-group col-md-6">
+                                                <label for="inputEmail4">Email</label>
+                                                <input type="email" class="form-control" id="inputEmail4" value="<%= usuario.email %> ">
+                                              </div>
+                                              <div class="form-group col-md-6">
+                                                <label for="inputPassword4">Password</label>
+                                                <input type="password" class="form-control" id="inputPassword4">
+                                              </div>
+                                            </div>
+                                            <div class="form-group">
+                                              <label for="inputAddress">Direccion</label>
+                                              <input type="text" class="form-control" id="inputAddress" value="<%= usuario.direccion %> ">
+                                            </div>
+                                          
+                                            <div class="form-row">
+                                              <div class="form-group col-md-6">
+                                                <label for="inputCity">Ciudad</label>
+                                                <input type="text" class="form-control" id="inputCity" value="<%= usuario.ciudad %> ">
+                                              </div>
+                                            
+                                            </div>
+                                            <div class="form-group">
+                                              <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="gridCheck">
+                                                <label class="form-check-label" for="gridCheck">
+                                                    Acepto los cambios 
+                                                </label>
+                                              </div>
+                                            </div>
+                                            <button type="submit" class="btn btn-primary">Confirmar</button>
+                                          </form>
+                                    </div>
+
+                                    <div class="tab-pane fade show active " id="productos" role="tabpanel" aria-labelledby="profile-tab">
+                                        <!--finaliza el row-->
+                                    </div>
+
+                                
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+            </div>
+
+
+
+
+            <%- include('partials/footer') %>
+    </body>
+
+</html>
